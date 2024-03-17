@@ -1,0 +1,215 @@
+/* Стили для базовых элементов */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+/* 0 0 1 */
+html {
+  font-size: 16px;
+}
+
+/* 0 0 1 */
+body {
+  font-size: 1rem;
+  line-height: 1;
+  background: #b4b4b4 url(../images/background.png);
+  background-attachment: fixed;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Стили для оболочки:
+   Задаём ширину для основной(значимой) части страницы
+   Задаём максимальную ширину для сохранения пропорций макета
+   Задаём фон
+   Задаём внутриние и внешние отступы
+   Задаём параметры вычисления высоты и ширины элемента
+   Задаём параметры тени
+*/
+/* 0 1 0 */
+.wrapper {
+  box-sizing: border-box;
+  width: 89%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 3%;
+  box-shadow: 0px 2px 10px 1px #686868;
+  margin-bottom: 2%;
+}
+
+/* Задаём параметры для HEADER  */
+/* Параметры для Заголовка 1-го уровня:
+   Задаём внешний нижний отступ 5%
+   Задаём внутрений верхний отступ 8%
+*/
+/* 0 1 0 */
+.header__heading {
+  padding-top: 8%;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  color: #a11414;
+}
+
+/* Задаём параметры для основного слова в заголовке:
+   Задём вес текста(хотя конкретно в данном случае
+   более правильно было бы использовать тег <strong>)
+   Задаём параметр перевода символов(в заглавные)
+*/
+/* 0 1 0 */
+.header__heading--spec {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Задаём параметры для изображения:
+   Задаём внутриние отступы
+   Задаём параметры границ
+   Задаём внешний нижний отступ
+*/
+/* 0 1 0 */
+.header__img-wrap {
+  padding: 1.2% 0.9%;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin-bottom: 5%;
+}
+
+/* 0 1 1 */
+.header__img-wrap img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Задаём параметры для MAIN  */
+/* Задаём параметры для первой секции*/
+/* 0 1 0 */
+.section--flx {
+  display: flex;
+}
+
+/* Задаём парамер для статьи */
+/* 0 2 0 */
+.section--flx .article {
+  margin-right: 0.6%;
+}
+
+/* Задаём параметри для заголовка статьи:
+   Цвет текста
+   Размер текста
+   Вес текста
+   Нижний внешний отступ
+*/
+/* 0 1 0 */
+.article__heading {
+  color: #a11414;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Задаём параметри для объекта статьи:
+   Цвет текста
+   Размер отступа текста в первой строке
+   Внешний отступ
+   ВЫравнивание текста
+*/
+/* 0 1 0 */
+.article__item {
+  color: #1b1b1b;
+  text-indent: 40px;
+  margin-bottom: 31px;
+  text-align: justify;
+}
+
+/* Задаём параметр отступа после перехода на новую строку */
+/* 0 1 1 */
+.article__item br {
+  margin-bottom: 1%;
+}
+
+/* Параметры для меню навигации:
+   Параметры ширины
+   Параметры высоты
+   Параметры скругления границ
+   Цвет фона
+   Внутриние отступы
+   Параметры шрифта
+   Параметр сжатия элемента
+*/
+/* 0 1 0 */
+.nav-wrap {
+  width: 13%;
+  height: fit-content;
+  border-radius: 2px 15px;
+  background: #d7d7d7;
+  padding: 2.5% 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-shrink: 0;
+}
+
+/* Задаём параметры для заголовка меню */
+/* 0 1 0 */
+.nav__heading {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Задаём параметры для пунктов меню */
+/* 0 1 0 */
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Задаём параметры для псевдокласса */
+/* 0 2 0 */
+.nav__link:hover {
+  font-weight: 700;
+  color: #a11414;
+  text-decoration: underline;
+}
+
+/* Задаём параметры для специальных элементов статьи */
+/* 0 1 0 */
+.article__text--spec {
+  text-transform: uppercase;
+}
+
+/* 0 1 0 */
+.article__item--spec--red {
+  color: #a11414;
+}
+
+/* 0 1 0 */
+.article__text--add {
+  text-decoration: line-through;
+}
+
+/* Задаём параметры  для "подвала" сайта */
+/* 0 1 0 */
+.footer {
+  width: 85%;
+  margin-top: 4px;
+  padding-bottom: 18px;
+  margin-bottom: 1%;
+}
+
+/* 0 1 0 */
+.footer__line {
+  background: url(../images/back.png) no-repeat 0 50%;
+  background-size: 100%;
+}
+
+/* 0 1 0 */
+.footer__item {
+  text-align: center;
+  padding: 7px 0 6px;
+  color: #403636;
+}
+
+/* 0 1 0 */
+.footer__item--spec {
+  font-weight: 700;
+}
