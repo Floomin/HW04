@@ -79,3 +79,58 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Задаём параметры для MAIN  */
+/* Задаём параметры для первой секции*/
+/* 0 1 0 */
+.section--flt {
+  overflow: hidden;
+}
+
+.section--flt::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Задаём парамер для статьи */
+/* 0 2 0 */
+.section--flt .article {
+  /* margin-right: 0.6%; */
+  float: left; /* Заменяем flex на float */
+  width: 82.5%; /* Задаем ширину для статьи */
+}
+
+/* Задаём параметри для заголовка статьи:
+   Цвет текста
+   Размер текста
+   Вес текста
+   Нижний внешний отступ
+*/
+/* 0 1 0 */
+.article__heading {
+  color: #a11414;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Задаём параметри для объекта статьи:
+   Цвет текста
+   Размер отступа текста в первой строке
+   Внешний отступ
+   ВЫравнивание текста
+*/
+/* 0 1 0 */
+.article__item {
+  color: #1b1b1b;
+  text-indent: 40px;
+  margin-bottom: 31px;
+  text-align: justify;
+}
+
+/* Задаём параметр отступа после перехода на новую строку */
+/* 0 1 1 */
+.article__item br {
+  margin-bottom: 1%;
+}
