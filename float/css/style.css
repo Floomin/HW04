@@ -134,3 +134,47 @@ body {
 .article__item br {
   margin-bottom: 1%;
 }
+
+/* Параметры для меню навигации:
+   Параметры ширины
+   Параметры высоты
+   Параметры скругления границ
+   Цвет фона
+   Внутриние отступы
+   Параметры шрифта
+   Параметр сжатия элемента
+*/
+/* 0 1 0 */
+.nav-wrap {
+  width: 13%;
+  height: fit-content;
+  border-radius: 2px 15px;
+  background: #d7d7d7;
+  padding: 2.5% 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right; /* Заменяем flex на float */
+}
+
+/* Задаём параметры для заголовка меню */
+/* 0 1 0 */
+.nav__heading {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Задаём параметры для пунктов меню */
+/* 0 1 0 */
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Задаём параметры для псевдокласса */
+/* 0 2 0 */
+.nav__link:hover {
+  font-weight: 700;
+  color: #a11414;
+  text-decoration: underline;
+}
