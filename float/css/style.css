@@ -178,3 +178,19 @@ body {
   color: #a11414;
   text-decoration: underline;
 }
+
+/* Задаём параметры для специальных элементов статьи */
+/* 0 1 0 */
+.article__text--spec {
+  text-transform: uppercase;
+}
+
+/* 0 1 0 */
+.article__item--spec--red {
+  color: #a11414;
+}
+
+/* 0 1 0 */
+.article__text--add {
+  text-decoration: line-through;
+}
