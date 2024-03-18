@@ -194,3 +194,30 @@ body {
 .article__text--add {
   text-decoration: line-through;
 }
+
+/* Задаём параметры  для "подвала" сайта */
+/* 0 1 0 */
+.footer {
+  width: 85%;
+  margin-top: 4px;
+  padding-bottom: 18px;
+  margin-bottom: 1%;
+}
+
+/* 0 1 0 */
+.footer__line {
+  background: url(../images/back.png) no-repeat 0 50%;
+  background-size: 100%;
+}
+
+/* 0 1 0 */
+.footer__item {
+  text-align: center;
+  padding: 7px 0 6px;
+  color: #403636;
+}
+
+/* 0 1 0 */
+.footer__item--spec {
+  font-weight: 700;
+}
