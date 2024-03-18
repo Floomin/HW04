@@ -125,6 +125,7 @@ body {
 .article__item {
   color: #1b1b1b;
   text-indent: 40px;
+  line-height: 1.2rem;
   margin-bottom: 31px;
   text-align: justify;
 }
