@@ -5,11 +5,11 @@
 /* 0 0 1 */
 html {
   font-size: 16px;
+  font-size: 1rem;
 }
 
 /* 0 0 1 */
 body {
-  font-size: 1rem;
   line-height: 1;
   background: #b4b4b4 url(../images/background.png);
   background-attachment: fixed;
@@ -182,7 +182,7 @@ body {
 
 /* Задаём параметры для специальных элементов статьи */
 /* 0 1 0 */
-.article__text--spec {
+.article__item--spec {
   text-transform: uppercase;
 }
 
